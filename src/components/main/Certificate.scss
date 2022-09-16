@@ -1,0 +1,98 @@
+.Certificate_container{
+    padding-top: 12vw;
+    padding-left: 15vw;
+    display: flex;
+    flex-direction: column;
+}
+
+
+#certificate_Title{
+    background-color:#2F2855;
+    width: 40vw;
+    height: 3.2vw;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 2.2vw;
+    font-weight: 550;
+    margin-bottom: 2vw;
+    border-radius: 8px;
+    padding-top: 0.15vw;
+    padding-bottom: 0.35vw;
+    transition: 0.5s;
+}
+
+
+.My_certificate_txt{
+    margin-top: 4.3vw;
+    color: rgb(48, 40, 88);
+    font-size: 2vw;
+    font-weight: 550;
+}
+
+.Video_img_contaioner{
+    margin-top: 1vw;
+}
+
+#my_Certificate1{
+    width: 26vw;
+    height: 12vw;
+    transition-duration:0.5s ;
+}
+.img_wrap{
+    overflow: hidden;
+    width: 26vw;
+    height: 12vw;
+    margin-right: 1vw;
+    border-radius: 10px;
+}
+.img_wrap:hover img{
+    transform: scale(1.03);
+}
+
+
+
+#my_Certificate2{
+    width: 26vw;
+    height: 12vw;
+    transition-duration: 0.5s;
+}
+
+#certificate_Title2{
+    background-color:#2F2855;
+    width: 40vw;
+    height: 3.2vw;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 2.2vw;
+    font-weight: 550;
+    margin-bottom: 2vw;
+    border-radius: 5px;
+    padding-top: 0.15vw;
+    padding-bottom: 0.4svw;
+    transition: 0.5s;
+    margin-top: 8vw;
+}
+
+#certifiacte_video{
+    margin-top: 1vw;
+    width: 60vw;
+    height: 35vw;
+}
+
+#certificate_date{
+    margin-top: 3vw;
+    width: 50vw;
+    height: 35vw;
+}
+
+#exam_notes_button{
+    width: 35vw;
+    height: 8vw;
+    margin-top: 10vw;
+    font-size: 2vw;
+    border: none;
+    border-radius: 30px; 
+    background-color: white;
+    -webkit-box-shadow: 2px 5px 16px 0px #6363633f, 5px 5px 15px 5px rgba(0,0,0,0); 
+    box-shadow:  2px 5px 16px 0px #68686842, 2px 2px 15px 2px rgba(65, 64, 64, 0.144);
+}

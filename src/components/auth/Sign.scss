@@ -1,0 +1,145 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+}
+
+#Sign_background_img{
+    width: 102vw;
+    margin-left: -1vw;
+}
+
+
+#back_button{
+    width: 1.1vw;
+    position: absolute;
+    margin-left: 35.3vw;
+    margin-top: 1.8vw;
+}
+
+#Mars_logo2{
+    position: absolute;
+    width: 12vw;
+    padding-left: 6vw;
+    margin-top: 3.4vw;
+}
+
+.Sign_content_conatiner{
+    background-color: white;
+    width: 38vw;
+    height: 50vw;
+    position: absolute;
+    margin-left: 32vw;
+    margin-top: -60vw;
+    border-radius: 20px 20px 20px 20px;
+    }
+
+.Sign_in_content{
+    padding-top: 5vw;
+    margin-left: 3.5vw;
+ 
+}
+
+#sign_in_text{
+    font-size: 2.7vw;
+    font-weight: 550;
+    margin-bottom: 1vw; 
+}
+
+
+#text_input_content{
+    padding-top: 2vw;
+    font-size: 1.5vw;
+    color: silver;
+}
+
+
+#idpw{
+    width: 29vw;
+    height: 3vw;
+    border-radius: 8px;
+    padding-left: 1vw;
+    font-size: 1.5vw;
+    border: 1.8px solid;
+    border-color:rgb(190, 190, 190) ;
+
+}
+
+
+
+#input_text{
+    padding-bottom: 0.6vw;
+    color:rgb(87, 87, 87);
+}
+
+#input_text2{    
+    font-size: 1.1vw;   
+    padding-bottom: 0.6vw;
+    color:rgb(87, 87, 87);
+}
+
+.same_line{
+    flex-direction: row;
+    display: flex;
+}
+
+#input_blind{
+    width: 1.78vw;
+    height: 1.5vw;
+    position: absolute;
+    margin-top: 0.36vw;
+    margin-left: 18vw;
+}
+
+#input_blind2{
+    width: 2.4vw;
+    height: 2.3vw;
+    position: absolute;
+    margin-top: -0.2px;
+    margin-left: 17.7vw;
+}
+
+#input_blind_text{
+    position: absolute;
+    padding-left: 20.5vw;
+    font-size: 1.6vw;
+    color: rgb(107, 107, 107);
+}
+
+
+
+#sign_button{
+    width: 30.5vw;
+    height: 3.5vw;
+    margin-top: 2vw;
+    border-radius : 15px;
+    border:none;
+    background-color: rgb(192, 192, 192);
+    color: white;
+    font-size: 1.5vw;
+}
+
+#checkbox_line{
+    margin-top: 1vw;
+}
+
+input[type="checkbox"]{
+    width: 1.2vw;
+    padding-right : 1vw ;
+}
+
+#text_margin{
+    margin-left: 0.2vw;
+    margin-top: 0.7vw;
+    font-size: 1.4vw;
+}
+
+#text_margin2{
+    margin-left: 11vw;
+    margin-top: 0.6vw;
+    font-size: 1.4vw;
+}
+
+.bottom_text{
+    margin-top: 5vw;
+}

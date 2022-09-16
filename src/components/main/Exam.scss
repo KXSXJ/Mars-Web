@@ -1,0 +1,26 @@
+.Exam_container{
+    padding-top: 15vw;
+    padding-left: 15vw;
+    display: flex;
+    flex-direction: column;
+}
+
+#exam_text{
+    width: 40vw;
+}
+
+#exam_screen{
+    width: 68vw;
+    padding-top: 5vw;
+}
+
+.exam_button{
+    display: flex;
+    flex-direction: row;
+    padding-left: 18vw;
+    padding-top: 5vw;
+}
+
+#exam_items{
+    width: 15vw;
+}

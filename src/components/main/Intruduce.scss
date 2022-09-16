@@ -1,0 +1,60 @@
+.Intruduce_container{
+    padding-top: 15vw;
+    padding-left: 15vw;
+    display: flex;
+    flex-direction: column;
+}
+
+
+#vws_txt{
+    width: 40vw;
+}
+
+#intruduce_img{
+    width: 70vw;
+    height: 40vw;
+    margin-top: 4vw;
+}
+
+
+.Content_about{
+    margin-top: 8vw;
+    color: rgb(48, 40, 88);
+    font-size: 2.2vw;
+    text-align: center;
+    margin-left: -15vw;
+    font-weight: 550;
+}
+
+.Content_about2{
+    margin-top: 0.8vw;
+    color: rgb(48, 40, 88);
+    font-size: 3vw;
+    text-align: center;
+    margin-left: -15vw;
+    font-weight: 550;
+}
+
+/*비디오 이미지*/
+.Video_img_contaioner{
+    display: flex;
+    flex-direction: row;
+}
+
+#video_img{
+    width: 33vw;
+    padding-right: 4vw;
+    padding-top: 8vw;
+}
+
+.Content_about3{
+    margin-top: 10vw;
+    color: rgb(48, 40, 88);
+    font-size: 2.6vw;
+    text-align: center;
+    margin-left: -15vw;
+    font-weight: 550;
+}
+
+
+
