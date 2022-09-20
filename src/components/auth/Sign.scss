@@ -1,16 +1,15 @@
 body{
     width: 100vw;
     height: 100vh;
-    margin: 0;
 }
 
 #Sign_background_img{
-    width: 102vw;
-    margin-left: -1vw;
+    width: 100vw;
+    height: 102vw;
 }
 
 
-#back_button{
+#close_button{
     width: 1.1vw;
     position: absolute;
     margin-left: 35.3vw;
@@ -29,8 +28,8 @@ body{
     width: 38vw;
     height: 50vw;
     position: absolute;
-    margin-left: 32vw;
-    margin-top: -60vw;
+    margin-left: 34vw;
+    margin-top: -85vw;
     border-radius: 20px 20px 20px 20px;
     }
 

@@ -1,0 +1,150 @@
+.Rank_container{
+    padding-top: 12vw;
+    padding-left: 15vw;
+    display: flex;
+    flex-direction: column;
+}
+
+
+#rank_top_txt{
+    background-color:#2F2855;
+    width: 40vw;
+    height: 3.2vw;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 2.2vw;
+    font-weight: 550;
+    margin-bottom: 2vw;
+    border-radius: 8px;
+    padding-top: 0.15vw;
+    padding-bottom: 0.35vw;
+    transition: 0.5s;
+}
+
+
+.My_Rank_txt{
+    margin-top: 1vw;
+    display: flex;
+    flex-direction: row;
+    font-size: 2.3vw;
+    font-weight: 550;
+    
+}
+
+.My_Rank_txt div{
+    padding-left: 0.5vw;
+}
+
+
+
+.My_Rank_txt:hover div{
+    animation: Rank_hover 1s ease forwards;
+}
+
+@keyframes Rank_hover {
+    from{
+        padding-top: 0;
+
+    }to{
+        background-color: #797499;
+        color: #FFFFFF;
+    }
+}
+
+.top3_Rank_box_container{
+    margin-top: 3.5vw;
+    margin-left: -1.5vw;
+    display: flex;
+    flex-direction: row;
+}
+
+#top3_Rank_box{
+    width: 24vw;
+    height: 28vw;
+    box-shadow: 3px 3px 10px  #b4b4b4; 
+    margin-left: 1.5vw;   
+    text-align: center;
+    margin-bottom: 2vw;
+}
+
+#rank_img{
+    width: 18vw;
+    margin-top: 2vw;
+}
+
+#top3_Rank_box p{
+    font-size: 2.8vw;
+    margin-top: -3.7vw;
+    font-weight: 550;
+}
+
+.top3_score_container{
+    width: 17vw;
+    margin-left: 3.3vw;
+    margin-top: -1.2vw;
+    background-color: #F4F4F4;
+    color: #68609b;
+    font-size: 1.8vw;
+    font-weight: 550;
+    border-radius: 15vw;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+#rank_score{
+    font-size: 2.8vw;
+    padding-right: 0.5vw;
+}
+
+#point_txt{
+    margin-top: 0.9vw;
+}
+
+.Rank_box_container{
+    display: flex;
+    flex: row;
+    width:75vw;
+    height: 6vw;
+    margin-top: 3vw;
+    box-shadow: 3px 3px 10px  #b4b4b4;
+    align-items: center;
+}
+
+#porfile_items{
+    width: 6vw;
+    height: 6vw;
+    margin-left: 2vw;
+}
+
+.score_container{
+    width: 17vw;
+    height: 4.2vw;
+    margin-left: 26vw;
+    background-color: #F4F4F4;
+    color: #68609b;
+    font-size: 1.8vw;
+    font-weight: 550;
+    border-radius: 15vw;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+
+
+#rank{
+    padding-left: 2.5vw;
+    font-size: 2vw;
+    font-weight: 550;
+    color: #9F9F9F;
+}
+
+
+#user_name_txt{
+    padding-left: 2.5vw;
+    font-size: 2vw;
+    font-weight: 550;
+    color: #9F9F9F;
+}

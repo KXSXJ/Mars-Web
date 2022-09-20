@@ -17,10 +17,10 @@ const togglePassword = () => {
 
     return(
     <div className="Sign_container">
-        <img id="Mars_logo2" src="./main_logo.png"></img>
+        <Link to="/"><img id="Mars_logo2" src="./main_logo.png"></img></Link>
         <img id="Sign_background_img"src="./Sign_img/Sign_background.png"></img>
     <div className="Sign_content_conatiner">
-        <img id="back_button" src="./Sign_img/back_img.png"></img>
+        <Link to="/"><img id="close_button" src="./Sign_img/back_img.png"></img></Link>
         <div className="Sign_in_content">
             <div id="sign_in_text">Sign in</div>
 
