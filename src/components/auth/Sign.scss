@@ -8,11 +8,19 @@ body{
     height: 102vw;
 }
 
+#background_top_txt{
+    position: absolute;
+    padding-left: 26.5vw;
+    margin-top: -93vw;
+    color: #FFFFFF;
+    font-size: 2.3vw;
+    font-weight: 550;
+}
 
 #close_button{
     width: 1.1vw;
     position: absolute;
-    margin-left: 35.3vw;
+    margin-left: 41.8vw;
     margin-top: 1.8vw;
 }
 
@@ -25,18 +33,17 @@ body{
 
 .Sign_content_conatiner{
     background-color: white;
-    width: 38vw;
+    width: 45vw;
     height: 50vw;
     position: absolute;
-    margin-left: 34vw;
+    margin-left: 27.5vw;
     margin-top: -85vw;
     border-radius: 20px 20px 20px 20px;
     }
 
 .Sign_in_content{
     padding-top: 5vw;
-    margin-left: 3.5vw;
- 
+    margin-left: 3.5vw; 
 }
 
 #sign_in_text{
@@ -54,14 +61,12 @@ body{
 
 
 #idpw{
-    width: 29vw;
-    height: 3vw;
+    width: 38vw;
+    height: 3.5vw;
     border-radius: 8px;
-    padding-left: 1vw;
     font-size: 1.5vw;
     border: 1.8px solid;
     border-color:rgb(190, 190, 190) ;
-
 }
 
 
@@ -82,12 +87,18 @@ body{
     display: flex;
 }
 
+#input_text2 a{
+    color: black;
+    font-weight: 550;
+    margin-left: 1vw;
+}
+
 #input_blind{
     width: 1.78vw;
     height: 1.5vw;
     position: absolute;
     margin-top: 0.36vw;
-    margin-left: 18vw;
+    margin-left: 26.5vw;
 }
 
 #input_blind2{
@@ -95,12 +106,12 @@ body{
     height: 2.3vw;
     position: absolute;
     margin-top: -0.2px;
-    margin-left: 17.7vw;
+    margin-left: 26.2vw;
 }
 
 #input_blind_text{
     position: absolute;
-    padding-left: 20.5vw;
+    padding-left: 29vw;
     font-size: 1.6vw;
     color: rgb(107, 107, 107);
 }
@@ -108,9 +119,9 @@ body{
 
 
 #sign_button{
-    width: 30.5vw;
-    height: 3.5vw;
-    margin-top: 2vw;
+    width: 38.7vw;
+    height: 4vw;
+    margin-top: 3vw;
     border-radius : 15px;
     border:none;
     background-color: rgb(192, 192, 192);
@@ -141,4 +152,6 @@ input[type="checkbox"]{
 
 .bottom_text{
     margin-top: 5vw;
+    text-align: center;
+    margin-left: -3.5vw;
 }
