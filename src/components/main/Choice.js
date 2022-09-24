@@ -16,9 +16,9 @@ export default function Choice(){
                 <button id="Go_To_BAKER">BAKER<img id="Arrow_Right"src="./start_page_img/Arrow_Right.png"  alt="Arrow_Right"></img></button>
                 </div>
                 <div className="Signbox_container">
-                    <button id="Sign_in_button">Sign in</button>
+                    <Link to="/Sign_page"><button id="Sign_in_button">Sign in</button></Link>
                     <img src="./start_page_img/mid_line.png" alt="mid_line"/>
-                    <button id="Sign_up_button">Sign up</button>
+                    <button id="Goto_Sign_up_button">Sign up</button>
                 </div>
             </div>
         </div>

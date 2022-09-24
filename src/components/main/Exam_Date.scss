@@ -1,11 +1,12 @@
-.Exam_container{
+.Exam_Date_container{
     padding-top: 12vw;
     padding-left: 15vw;
     display: flex;
     flex-direction: column;
 }
 
-#Exam_top_txt{
+
+#Exam_Date_top_txt{
     background-color:#2F2855;
     width: 40vw;
     height: 3.2vw;
@@ -20,18 +21,29 @@
     transition: 0.5s;
 }
 
-#exam_screen{
-    width: 68vw;
-    padding-top: 5vw;
+#certificate_date{
+    margin-top: 3vw;
+    width: 60vw;
+    
 }
 
-.exam_button{
-    display: flex;
-    flex-direction: row;
-    padding-left: 18vw;
-    padding-top: 5vw;
+#exam_notes_button{
+    width: 35vw;
+    height: 7vw;
+    margin-top: 10vw;
+    font-size: 1.5vw;
+    border: none;
+    color: white;
+    background-color: #9C95BF;
+    border-radius: 5vw; 
+    margin-left: 2vw;
 }
 
-#exam_items{
-    width: 15vw;
+
+#exam_notes_button:hover{
+    background-color: #8882a7;
 }
+
+
+
+

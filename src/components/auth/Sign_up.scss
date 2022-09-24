@@ -3,12 +3,12 @@ body{
     height: 100vh;
 }
 
-#Sign_background_img{
+#sign_background_img{
     width: 100vw;
     height: 102vw;
 }
 
-#background_top_txt{
+#background_top_text{
     position: absolute;
     padding-left: 26.5vw;
     margin-top: -93vw;
@@ -17,11 +17,11 @@ body{
     font-weight: 550;
 }
 
-#close_button{
+#sign_up_close_button{
     width: 1.1vw;
     position: absolute;
-    margin-left: 42.3vw;
-    margin-top: 1.8vw;
+    margin-left: 47vw;
+    margin-top: 2vw;
 }
 
 #Mars_logo2{
@@ -31,44 +31,54 @@ body{
     margin-top: 3.4vw;
 }
 
-.Sign_content_container{
+.Sign_up_top_text{
+    margin-top: 2vw;
+    text-align: center;
+    margin-left: -5.7vw; 
+}
+
+
+.Sign_up_content_container{
     background-color: white;
-    width: 45vw;
-    height: 50vw;
+    width: 50vw;
+    height: 70vw;
     position: absolute;
-    margin-left: 27.5vw;
+    margin-left: 25vw;
     margin-top: -85vw;
     border-radius: 20px 20px 20px 20px;
     opacity: 0;
     animation: opacity_effect 1.2s ease 0.2s forwards;
-    }
-
-    
-.Sign_in_content{
-    padding-top: 5vw;
-    margin-left: 3.5vw; 
 }
 
+.Sign_up_content{
+    padding-top: 5vw;
+    margin-left: 5.7vw; 
+}
 
-#sign_in_text{
+#sign_up_text{
     font-size: 2.7vw;
     font-weight: 550;
     margin-bottom: 1vw; 
 }
 
 
-#text_input_content{
+#sign_up_text_input_content{
+    padding-top: 1vw;
+    font-size: 1.5vw;
+    color: silver;
+}
+#sign_up_text_input_content2{
     padding-top: 2vw;
     font-size: 1.5vw;
     color: silver;
 }
 
 
-#idpw{
-    width: 38vw;
-    height: 3.5vw;
+#sign_up_idpw{
+    width: 37vw;
+    height: 3.3vw;
     border-radius: 1vw;
-    font-size: 1.5vw;
+    font-size: 1.2vw;
     border: 1.8px solid;
     border-color:rgb(190, 190, 190) ;
     padding-left: 1vw;
@@ -76,96 +86,104 @@ body{
 
 
 
-#input_text{
+#sign_up_input_text{
     padding-bottom: 0.6vw;
     color:rgb(87, 87, 87);
+    font-size: 1.3vw;
 }
 
-#input_text2{    
-    font-size: 1.1vw;   
+#sign_up_input_text2{    
+    font-size: 1.5vw;   
     padding-bottom: 0.6vw;
     color:rgb(87, 87, 87);
+    margin-left: -1.5vw;
 }
 
-.same_line{
+#sign_up_input_text3{    
+    font-size: 1.2vw;   
+    padding-bottom: 0.6vw;
+    color:rgb(87, 87, 87);
+    margin-left: -2.7vw;
+}
+
+.Sign_up_same_line{
     flex-direction: row;
     display: flex;
 }
 
-#input_text2 a{
+#sign_up_input_text2 a{
     color: black;
     font-weight: 550;
-    margin-left: 0.3vw;
-    text-decoration: none;
+    margin-left: 0.4vw;
 }
 
-#input_text2 a:hover{
+#sign_up_input_text2 a:hover{
     color: rgb(83, 83, 83);
 }
 
 
-
-#input_blind{
-    width: 1.78vw;
-    height: 1.5vw;
+#sign_up_input_blind{
+    width: 1.57vw;
+    height: 1.4vw;
     position: absolute;
-    margin-top: 0.36vw;
-    margin-left: 26.5vw;
+    margin-top: 0.16vw;
+    margin-left: 27vw;
 }
 
-#input_blind2{
-    width: 2.4vw;
-    height: 2.3vw;
+#sign_up_input_blind2{
+    width: 2.2vw;
+    height: 2.1vw;
     position: absolute;
-    margin-top: -0.2px;
-    margin-left: 26.2vw;
+    margin-top: -0.2vw;
+    margin-left: 26.7vw;
 }
 
-#input_blind_text{
+#sign_up_input_blind_text{
     position: absolute;
-    padding-left: 28.5vw;
-    font-size: 1.6vw;
+    padding-left: 29vw;
+    font-size: 1.4vw;
+    margin-top: -0.2vw;
     color: rgb(107, 107, 107);
 }
 
-#guide_txt{
+#sign_up_guide_text{
     color: #AD5757;
-    font-size: 1.2vw;
+    font-size: 1vw;
     margin-top: 0.3vw;
     margin-left: 0.5vw;
     position: absolute;
 }
 
-#login_button{
-    width: 38.7vw;
+#sign_up_button{
+    width: 20vw;
     height: 4vw;
     margin-top: 4vw;
     border-radius : 2vw;
     border:none;
     background-color: #9C95BF;
     color: white;
-    font-size: 1.5vw;
+    font-size: 1.2vw;
+    margin-left: 9vw;
 }
 
-#login_button:hover{
-    background-color: #918baf
+#sign_up_button:hover{
+    background-color: #9790b8;
 }
 
-
-#text_margin{
+#sign_up_text_margin{
     margin-left: 0.2vw;
     margin-top: 0.7vw;
     font-size: 1.4vw;
 }
 
-#text_margin2{
+#sign_up_text_margin2{
     margin-left: 11vw;
     margin-top: 0.6vw;
     font-size: 1.4vw;
 }
 
-.bottom_text{
-    margin-top: 5vw;
+.Sign_up_bottom_text{
+    margin-top: 3vw;
     text-align: center;
     margin-left: -3.5vw;
 }

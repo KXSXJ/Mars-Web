@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { axiosC } from "./../../axios";
-import ReactDOM from "react-dom";
 import "./Sign.scss";
 
 export default function Sign() {
@@ -27,7 +26,7 @@ export default function Sign() {
   // Btn click -> axiosC Login Post 요청
   const postLogin = () => {
     axiosC({
-      url: "http://3.39.32.181:8001/api/auth/login",
+      url: "",
       method: "post",
       data: {
         id: inputId,
@@ -60,7 +59,7 @@ export default function Sign() {
       <div id="background_top_txt">
         여러분의 자격시험 능력을 지금 시험해보세요
       </div>
-      <div className="Sign_content_conatiner">
+      <div className="Sign_content_container">
         <Link to="/">
           <img id="close_button" src="./Sign_img/back_img.png"></img>
         </Link>
@@ -82,17 +81,17 @@ export default function Sign() {
               <div id="input_text">비밀번호</div>
               <label on onClick={togglePassword}>
                 {isRevealPassword ? (
-                  <img id="input_blind2" src="./Sign_img/eyes.png"></img>
-                ) : (
                   <img id="input_blind" src="./Sign_img/killeyes.png"></img>
+                ) : (
+                  <img id="input_blind2" src="./Sign_img/eyes.png"></img>
                 )}
                 <div id="input_blind_text">
-                  {isRevealPassword ? "보기" : "숨기기"}
+                  {isRevealPassword ? "숨기기" : "보기"}
                 </div>
               </label>
             </div>
             <input
-              type={isRevealPassword ? "password" : "text"}
+              type={isRevealPassword ? "text" : "password"}
               id="idpw"
               onChange={setPwlength}
               required
@@ -107,7 +106,7 @@ export default function Sign() {
 
           <div className="bottom_text">
             <div id="input_text2">
-              계정을 가지고있지 않습니까? <a>회원가입</a>
+              계정을 가지고있지 않습니까? <Link to="/SignUp"><a>회원가입</a></Link>
             </div>
           </div>
         </div>

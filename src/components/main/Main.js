@@ -7,8 +7,8 @@ import Intrucduce from "./Intruduce";
 import ButtomInformation from "../Bottom/Buttom_information2";
 import Rank from "./Rank"
 import Guide from "./Guide";
-
 import Exam from "./Exam";
+import ExamDate from "./Exam_Date";
 
 export default function Main(){
     const [isImg1, setIsImg1]=useState("0");
@@ -120,7 +120,7 @@ export default function Main(){
         </div>
 
             {isImg_click1==="0" && isImg_click2==="0" && isImg_click3==="0" && isImg_click4==="0" && isImg_click5==="0"? <Intrucduce/> :null}
-            {isImg_click1 ==="1" ? <Intrucduce/> : null}   
+            {isImg_click1 ==="1" ? <ExamDate/> : null}   
             {isImg_click2 ==="1" ? <Guide/> : null} 
             {isImg_click3 ==="1" ? <Certificate/> : null}
             {isImg_click4 ==="1" ? <Rank/> : null}

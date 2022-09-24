@@ -21,9 +21,7 @@ export default function Certificate(){
         <div id="certificate_Title2"><div>실기시험 영상</div></div>
         <div className="My_certificate_txt">조주기능사 참고 영상</div>
         <iframe id="certifiacte_video" src="https://www.youtube.com/embed/ac1jwfn4R9Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <div id="certificate_Title2"><div>조주기능사 일정</div></div>
-        <img id="certificate_date"src="./Main_cocktail/certificate_img/Certificate_date_img.png" alt="Certificate_date"></img>
-        <button id="exam_notes_button"><b>조주기능사 시험 유의사항 확인 하기</b></button>
+
      </div>
 
      </div>
