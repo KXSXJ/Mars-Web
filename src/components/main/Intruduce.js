@@ -1,26 +1,11 @@
 import "./Intruduce.scss"
-import { ScrollControler } from "react-animation-on-scroll"
 import { useEffect, useState } from "react"
 
 
 
 
 export default function Intrucduce(){
-  const [position, setPosition]=useState(0);
-
-  function onScroll(){
-    setPosition(window.scrollY)
-  }
-  useEffect(()=>{
-    window.addEventListener("scroll", onScroll);
-    return()=>{
-      window.removeEventListener("scroll", onScroll);
-    }
-  },[]);
-  
-  
-
-
+ 
    return(
         
         <div className="Intruduce_container">

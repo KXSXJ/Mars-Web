@@ -4,8 +4,9 @@ import { useState } from "react"
 import "./Main.scss"
 import Certificate from "./Certificate";
 import Intrucduce from "./Intruduce";
-import ButtomInformation from "./Bottom_Information";
+import ButtomInformation from "../Bottom/Buttom_information2";
 import Rank from "./Rank"
+import Guide from "./Guide";
 
 import Exam from "./Exam";
 
@@ -80,7 +81,7 @@ export default function Main(){
         <div className="Main_Top_Content">
             <div className="Main_Top">
                 <img onClick={Go_to_Main} id="Mars_logo" src="./main_logo.png" alt="Mars_icon"></img>
-                <Link to="/Sgin_page"><img id="guest_Mode_profile" src="./Main_cocktail/main_img/Guest_Mode.png" alt="Guest_icon"></img></Link>
+                <Link to="/Sign_page"><img id="guest_Mode_profile" src="./Main_cocktail/main_img/Guest_Mode.png" alt="Guest_icon"></img></Link>
             </div>
             <div className="Main_Top_Txt">여러분의 창업능력을 지금 확인해보세요</div>
             <div id="main_test_button_img" onClick={ClickMenu5}><img id="icon2" src="./Main_cocktail/main_img/icon2.png" alt="icon2"></img>
@@ -120,7 +121,7 @@ export default function Main(){
 
             {isImg_click1==="0" && isImg_click2==="0" && isImg_click3==="0" && isImg_click4==="0" && isImg_click5==="0"? <Intrucduce/> :null}
             {isImg_click1 ==="1" ? <Intrucduce/> : null}   
-            {isImg_click2 ==="1" ? <Intrucduce/> : null} 
+            {isImg_click2 ==="1" ? <Guide/> : null} 
             {isImg_click3 ==="1" ? <Certificate/> : null}
             {isImg_click4 ==="1" ? <Rank/> : null}
             {isImg_click5 ==="1" ? <Exam/> : null}

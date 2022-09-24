@@ -3,14 +3,14 @@ import "./Bottom_Information.scss"
 
 
 
-export default function Buttom_Information(){
+export default function Bottom_Information(){
 
   
 
     return(
         
         <div><img id="Bottom_Line" src="./Main_cocktail/bottom_img/Bottom_Line.png"></img>
-        <div className="Bottom_content_contaioner">
+        <div className="Bottom_content_container">
             
             <div className="Bottom_side_left">
                 <img id="bottom_logo"src="./Main_cocktail/bottom_img/bottom_logo.png"></img>

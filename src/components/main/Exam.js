@@ -1,7 +1,7 @@
 import{Link} from "react-router-dom";
 import { useState } from "react"
 import "./Exam.scss"
-import Buttom_Information from './Bottom_Information';
+
 
 export default function Exam(){
 

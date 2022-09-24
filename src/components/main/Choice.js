@@ -2,7 +2,7 @@ import{Link} from "react-router-dom";
 import "./Choice.scss"
 
 
-export default function Main(){
+export default function Choice(){
     
     return(
         <div className="Background_Container">
