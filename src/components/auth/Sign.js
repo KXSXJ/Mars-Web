@@ -14,6 +14,7 @@ export default function Sign() {
     setIsRevealPassword((prevState) => !prevState);
   };
 
+  
   let pwcheck=inputPw;
 
   function setPwlength(e){
