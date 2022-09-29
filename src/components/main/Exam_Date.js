@@ -8,8 +8,8 @@ export default function ExamDate(){
         <button id="exam_notes_button"><b>조주기능사 시험 유의사항 확인 하기</b></button>
         <div class="container">
   
-  </div>
-        </div>
+    </div>
+    </div>
 
     )
 }

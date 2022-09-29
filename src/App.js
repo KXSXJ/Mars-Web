@@ -9,6 +9,8 @@ import Bartendet_Certificate from "./components/main/Certificate";
 import Main from "./components/main/Main";
 import Guide from "./components/main/Guide"
 import SignUP from "./components/auth/Sign_up";
+import TestResult1 from "./components/main/Cocktail_Test_Result"
+import LookupCertificate from "./components/main/Lookup_My_Certificate";
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
       <Route path="/Sign_page" element={<Sign/>}/>
       <Route path="/Guide" element={<Guide/>}/>
       <Route path="/SignUp" element={<SignUP/>}/>
+      <Route path="/TestResult1" element={<TestResult1/>}/>
+      <Route path="/Lookup_Certificate" element={<LookupCertificate/>}/>
     </Routes>
   );
 }

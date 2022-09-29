@@ -10,8 +10,10 @@ export default function Sign_Up() {
   const [inputId, setInputId] = useState("");
   const [inputPw, setInputPw] = useState("");
   const [inputEmail, setInputEmail] = useState("");
-  const [inputNickName, setInputNickName] = useState("");
   const [inputRePw, setInputREPw] = useState("");
+  const [inputNickName, setInputNickName] = useState("");
+ 
+
 
   const togglePassword = () => {
     setIsRevealPassword((prevState) => !prevState);
@@ -23,6 +25,39 @@ export default function Sign_Up() {
     setInputPw(e.target.value)
     console.log(inputPw)
   }
+
+  
+// Btn click -> axiosC Login Post 요청
+const postJoin = () => {
+  axiosC({
+    url: "",
+    method: "post",
+    data: {
+      id: inputId,
+      pw: inputPw,
+      email: inputEmail,
+      NickName: inputNickName
+    },
+  })
+    .then((res) => {
+      //Login 성공
+      if (res.data.result) {
+        localStorage.setItem("accessToken", res.data.token); // JWT 저장, (key : value) 형식
+        localStorage.setItem("joinId", res.data.info[0]); // 계정 정보(id) 저장
+        localStorage.setItem("joinpw", res.data.info[1]); // 계정 정보(pw) 저장
+        localStorage.setItem("joinEmail", res.data.info[2]); // 계정 정보(email) 저장
+        localStorage.setItem("joinNickName", res.data.info[3]); // 계정 정보(NickName) 저장
+        
+        window.alert("회원가입 완료"); // 계정 정보(이름) 이용
+        window.location.replace("/Sign_page"); // 기본 경로로 이동
+      }
+      //Login 실패
+      else {
+        window.alert("정확한 정보를 입력해주세요.");
+      }
+    })
+    .catch((err) => console.log(err));
+};
 
 
 
@@ -111,15 +146,24 @@ export default function Sign_Up() {
             ></input>
               {inputPw==="" || inputRePw==="" ? null :  inputPw === inputRePw ?  null :<div id="sign_up_guide_text">비밀번호를 다시 확인해주세요</div>}
           </div>
+          <div className="Sign_up_same_line2">
+            준비하시는 기능사를 선택해주세요 <a>(선택)</a>
+          </div>
+          <div className="Sign_up_checkbox_container">
+            <input id="sign_up_checkbox_array" type="checkbox" value="drink" /><a>조주기능사</a>
+            <input id="sign_up_checkbox_array" type="checkbox" value="pastry"/><a>제과기능사</a>
+            <input id="sign_up_checkbox_array" type="checkbox" value="bakery"/><a>제빵기능사</a>
+          </div>
           </div>
 
-          <button id="sign_up_button" name="Sign_up">
+          <button id="sign_up_button" name="Sign_up" onClick={postJoin}>
             회원가입
           </button>
 
           <div className="Sign_up_bottom_text">
             <div id="sign_up_input_text3">
-              계정이 있으십니까? <a>로그인</a>
+              계정이 있으십니까? <Link to="/Sign_page"><a>로그인</a></Link>
+              
             </div>
           </div>
         </div>

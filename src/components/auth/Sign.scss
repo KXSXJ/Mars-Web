@@ -104,21 +104,23 @@ body{
 }
 
 
-
+//가리기
 #input_blind{
-    width: 1.78vw;
-    height: 1.5vw;
+    width: 1.71vw;
+    height: 1.42vw;
     position: absolute;
-    margin-top: 0.36vw;
+    margin-top: 0.5vw;
     margin-left: 26.5vw;
+    cursor: pointer;
 }
-
+//보이기
 #input_blind2{
-    width: 2.4vw;
-    height: 2.3vw;
+    width: 2.35vw;
+    height: 2.1vw;
     position: absolute;
-    margin-top: -0.2px;
+    margin-top: 0.15vw;
     margin-left: 26.2vw;
+    cursor: pointer;
 }
 
 #input_blind_text{
@@ -126,6 +128,7 @@ body{
     padding-left: 28.5vw;
     font-size: 1.6vw;
     color: rgb(107, 107, 107);
+    cursor: pointer;
 }
 
 #guide_txt{
@@ -145,6 +148,7 @@ body{
     background-color: #9C95BF;
     color: white;
     font-size: 1.5vw;
+    cursor: pointer;
 }
 
 #login_button:hover{

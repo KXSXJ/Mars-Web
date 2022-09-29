@@ -9,6 +9,8 @@ import Rank from "./Rank"
 import Guide from "./Guide";
 import Exam from "./Exam";
 import ExamDate from "./Exam_Date";
+import TestResult from "./Cocktail_Test_Result";
+import LookupCertificate from "./Lookup_My_Certificate";
 
 export default function Main(){
     const [isImg1, setIsImg1]=useState("0");
@@ -121,7 +123,7 @@ export default function Main(){
 
             {isImg_click1==="0" && isImg_click2==="0" && isImg_click3==="0" && isImg_click4==="0" && isImg_click5==="0"? <Intrucduce/> :null}
             {isImg_click1 ==="1" ? <ExamDate/> : null}   
-            {isImg_click2 ==="1" ? <Guide/> : null} 
+            {isImg_click2 ==="1" ? <TestResult/> : null} 
             {isImg_click3 ==="1" ? <Certificate/> : null}
             {isImg_click4 ==="1" ? <Rank/> : null}
             {isImg_click5 ==="1" ? <Exam/> : null}
