@@ -11,6 +11,8 @@ import Guide from "./components/main/Guide"
 import SignUP from "./components/auth/Sign_up";
 import TestResult1 from "./components/main/Cocktail_Test_Result"
 import LookupCertificate from "./components/main/Lookup_My_Certificate";
+import Schedule1 from "./components/DateContent/Schedule"
+import Schedule2 from "./components/DateContent/Schedule2"
 
 function App() {
   return (
@@ -23,6 +25,8 @@ function App() {
       <Route path="/SignUp" element={<SignUP/>}/>
       <Route path="/TestResult1" element={<TestResult1/>}/>
       <Route path="/Lookup_Certificate" element={<LookupCertificate/>}/>
+      <Route path="/Schedule_cocktail" element={<Schedule1/>}/>
+      <Route path="/Schedule_bakery" element={<Schedule2/>}/>
     </Routes>
   );
 }

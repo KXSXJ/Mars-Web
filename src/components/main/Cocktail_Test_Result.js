@@ -3,7 +3,7 @@ import "./Cocktail_Test_Result.scss"
 export default function CocktailTestResult(){
     
 
-const[inputScore,setInputScore]=useState(60);
+const[inputScore,setInputScore]=useState(59);
 
 
     return(
