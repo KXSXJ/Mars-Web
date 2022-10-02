@@ -4,197 +4,216 @@ import TestResult from "../../Cocktail/exam/Test_Result"
 
 
 export default function CocktailB({name}) {
-  let quest = [
-    "1. 발포성 와인의 이름이 잘못 연결된 것은?",
-    "2. 식후 주(After Dinner Drink)로 가장 적합한 것은?",
-    "3.	리큐르 중 D.O.M. 글자가 표기되어 있는 것은?",
-    "4. 슬로우 진(Sloe Gin)의 설명 중 옳은 것은?",
-    "5. 콘 위스키(Corn Whiskey)란?",
-    "6. 일반적으로 단식 증류기(Pot Still)로 증류하는 것은?",
-    "7. 알코올성 음료를 의미하는 용어가 아닌 것은?",
-    "8. 비알코올성 음료의 분류방법에 해당되지 않는 것은?",
-    "9. 다음 중 럼에 대한 설명이 아닌 것은?",
-    "10. 탄산음료 중 뒷맛이 쌉쌀한 맛이 남는 음료는?",
-    "11. 셰이킹(Shaking) 기법에 대한 설명으로 틀린 것은?",
-    "12. 주장의 종류로 가장 거리가 먼 것은?",
-    "13. 다음 중 달걀이 들어가는 칵테일은?",
-    "14.다음 중 휘젓기(Stirring) 기법으로 만드는 칵테일이 아닌 것은?",
-    "15. 다음 칵테일 중 Floating 기법으로 만들지 않는 것은?",
-    "16. 와인에 대한 Corkage의 설명으로 가장 거리가 먼 것은?",
-    "17. 주장(Bar)에서 기물의 취급방법으로 적합하지 않은 것은?",
-    "18. Which one is the spirit made from agave?",
-    "19. “a glossary of basic wine terms”의 연결로 틀린 것은?",
-    "20. 다음 ( )에 들어갈 단어로 가장 적합한 것은? (      ) goes well with dessert.",
-  ];
-  var ans1 = [
-    "스페인 - 카바(Cava)",
-    "코냑(Cognac)",
-    "Sloe Gin",
-    "증류주의 일종이며, 진(Gin)의 종류이다.",
-    "원료의 50% 이상 옥수수를 사용한 것",
-    "Kentucky Straight Bourbon Whiskey",
-    "Hard Drink",
-    "청량음료",
-    "럼의 주재료는 사탕수수이다.",
-    "칼린스 믹서",
+  let quest =  [ '1. 내부에 팬이 부착되어 열풍을 강제 순환시키면서 굽는 타입으로 굽기의 편차가 극히 적은 오븐은?',
+                  '2. 정형한 식빵 반죽을 팬에 넣을 때 이음매의 위치는 어느쪽이 가장 좋은가?',
+                  '3. 식빵 반죽을 분할할 때 처음에 분할한 반죽과 나중에 분할한 반죽은 숙성도의 차이가 크므로 단시간 내에 분할해야한다. 몇분 이내로 완료하는 것이 좋은가?',
+                  '4. 2차 발효시 상대습도가 부족할 때 일어나는 현상은?',
+                  '5. 일반적인 스펀지 도우법으로 식빵을 만들 때 도우의 가장 적당한 온도는?',
+                  '6. 건포도 식빵, 옥수수 식빵, 야채 식빵을 만들 때 건포도, 옥수수, 야채는 믹싱의 어느 단계에 넣는 것이 좋은가?',
+                  '7. 밀가루온도 25℃, 실내온도 24℃, 수돗물 온도 20℃, 결과 온도 30℃, 희망온도27℃, 마찰계수 24일 때 사용할 물 온도는?',
+                  '8. 노무비를 절감하는 방법으로 바람직하지 않은 것은?',
+                  '9. 냉동반죽에 사용되는 재료와 제품의 특성에 대한 설명 중 틀린 것은?',
+                  '10. 패리노그래프와 관계가 적은 것은?',
+                  '11. 다음 중 점도계가 아닌 것은?',
+                  '12. 단백질 분해 효소는?',
+                  '13. 이스트푸드의 구성성분 중 칼슘염의 주요 기능은?',
+                  '14. 우유 단백질의 응고에 관여하지 않는 것은?',
+                  '15. 커스터드 크림에서 계란의 주요역할은',
+                  '16. 제조현장에서 제빵용 이스트를 저장하는 현실적인 온도로 적당한 것은?',
+                  '17. 다음 중 지방분해 효소는?',
+                  '18. 강력분의 특성으로 틀린 것은?',
+                  '19. 다음 중 글레이즈(glaze) 사용시 적합한 것은?',
+                  '20. 제빵에서 설탕의 기능으로 틀린 것은?'
+              
+];
+  var ans1 =     ['터널오븐',
+                  '위',
+                  '2~7분',
+                  '질긴 껍질',
+                  '17℃',
+                  '최종 단계 후',
+                  '2℃',
+                  '표준화',
+                  '일반 제품보다 산화제 사용량을 증가시킨다.',
+                  '흡수율 측정',
+                  '비스코아밀로그래프(Viscoamylograph)',
+                  '치마아제',
+                  '이스트 성장에 필요하다',
+                  '산',
+                  '영양가',
+                  '-18℃ 이하',
+                  '리파아제',
+                  '중력분에 비해 단백질 함량이 높다',
+                  '15℃',
+                  '이스트의 영양분이 됨'
 
-    "셰이커에 얼음을 충분히 넣어 빠른 시간 안에 잘 섞이고 차게 한다.",
-    "Cocktail Bar",
-    "Millionaire",
-    "Manhattan",
-    "B&B",
-    "업장의 와인이 아닌 개인이 따로 가져온 와인을 마시고자 할 때 적용된다.",
-    "금이 간 접시나 글라스는 규정에 따라 폐기한다.",
+];
+var ans2 =     ['컨벡션오븐',
+                  '아래',
+                  '8~13분',
+                  '흰 반점',
+                  '27℃',
+                  '최종 단계 후',
+                  '6℃',
+                  '단순화',
+                  '저율배합인 프랑스빵이 가장 유리하다.',
+                  '믹싱시단 측정',
+                  '익스텐소그래프(Extensograph)',
+                  '말타아제',
+                  '반죽에 탄성을 준다.',
+                  '레닌',
+                  '결합제',
+                  '-1~5℃',
+                  '프로테아제',
+                  '박력분에 비해 글루텐 함량이 적다.',
+                  '25℃',
+                  '껍질색을 나게 함'
+];
+var ans3 =     ['밴드오븐',
+                  '좌측',
+                  '15~20분',
+                  '터짐',
+                  '37℃',
+                  '발전 단계 후', 
+                  '8℃',
+                  '설비 휴무',
+                  '유화제를 사용하는 것이 좋다.',
+                  '믹싱 내구성 측정',
+                  '맥미카엘(MacMichael) 점도계',
+                  '프로테아제',
+                  '오븐 팽창이 커진다.',
+                  '가열',
+                  '팽창제',
+                  '20℃',
+                  '치마아제',
+                  '박력분에 비해 점탄성이 크다',
+                  '35℃',
+                  '향을 향상시킴.'
 
-    "Tequila",
-    "Balance :  the portion of the wines odor derived from the grape variety and fermentation.",
-    "Ice Wine",
-  ];
-  var ans2 = [
-    "독일 - 젝트(Sekt)",
-    "드라이 셰리 와인(Dry Sherry Wine)",
-    "Kahlua",
-    "보드카(Vodka)에 그레나딘 시럽을 첨가한 것이다.",
-    "원료에 옥수수 50%, 호밀 50%가 섞인 것",
-    "Grain Whisky",
-    "Liquor",
-    "영양음료",
-    "럼은 서인도제도를 통치하는 유럽의 식민정책 중 삼각무역에 사용되었다.",
-    "토닉 워터",
+];
+var ans4 =     [  '래크오븐',
+                    '우측',
+                    '25~30분',
+                    '단단한 표피',
+                    '47℃',
+                    '렛 다운 단계 후', 
+                    '17℃',
+                    '공정시간 단축',
+                    '밀가루는 단백질 양과 질이 좋은 것을 사용한다.',
+                    '호화특성 측정',
+                    '브룩필드(Brookfield) 점도계',
+                    '인버타이제',
+                    '물 조절제 역할을 한다.',
+                    '리피아제',
+                    '저장성',
+                    '35℃ 이상',
+                    '말티아제',
+                    '경질소맥을 원료로 한다.',
+                    '45℃',
+                    '노화를 촉진시킴.'
 
-    "셰이커에 재료를 순서대로 Cap을 Strainer에 씌운 다음 Body에 덮는다.",
-    "Members Club Bar",
-    "Black Russian",
-    "Martini",
-    "Pousse Cafe",
-    "와인을 마시기 위해 이용되는 글라스, 직원 서비스 등에 대한 요금이 포함된다.",
-    "은기물은 은기물 전용 세척액에 오래 담가두어야 한다.",
+];
+var [Num,Numch] = useState(0);
 
-    "Rum",
-    "Nose : the total odor of wine composed of aroma, bouquet, and other factors.",
-    "Red Wine",
-  ];
-  var ans3 = [
-    "이탈리아 - 스푸만테(Spumante)",
-    "드라이 진(Dry Gin)",
-    "Kummel",
-    "아주 천천히 분위기 있게 먹는 칵테일이다.",
-    "원료의 80% 이상 옥수수를 사용한 것",
-    "Dark Rum",
-    "Ginger Ale",
-    "발포성음료",
-    "럼은 사탕을 첨가하여 만든 리큐르이다.",
-    "진저엘",
+var [sc,scch] = useState(0);
+function add1(e){
+  Numch(Num+1);
 
-    "잘 섞이지 않는 재료들을 셰이커에 넣어 세차게 흔들어 섞는 조주기법이다.",
-    "Snack Bar",
-    "Brandy Alexander",
-    "Gibson",
-    "B-52",
-    "주로 업소가 보유하고 있지 않은 와인을 시음할 때 많이 작용된다.",
-    "크리스탈 글라스는 가능한 손으로 세척한다.",
+  var id = (e.target.value);
+  switch(Num){
+    case 0:                 // 1번 문제
+      if(Num==0 && id== 2)
+      scch(sc+5);
+      console.log(sc);
+    break;
+    case 1:                 // 2번 
+      if(Num==1 && id== 2)
+      scch(sc+5);
+    break;
+    case 2:                 // 3번 
+      if(Num==2 && id== 3)
+      scch(sc+5);
+    break;
+    case 3:                 // 4번 
+      if(Num==3 && id== 3)
+      scch(sc+5);
+    break;
+    case 4:                 // 5번 
+      if(Num==4 && id== 2)
+      scch(sc+5);
+    break;
+    case 5:                 // 6번 
+      if(Num==5 && id== 1)
+      scch(sc+5);
+    break;
+    case 6:                 // 7번 
+      if(Num==6 && id== 3)
+      scch(sc+5);
+    break;
+    case 7:                 // 8번 
+      if(Num==7 && id== 3)
+      scch(sc+5);
+    break;
+    case 8:                 // 9번 
+      if(Num==8 && id== 2)
+      scch(sc+5);
+    break;
+    case 9:                 // 10번 
+      if(Num==9 && id== 4)
+      scch(sc+5);
+    break;
+    case 10:                 // 11번 문제
+    if(Num==10 && id== 2)
+    scch(sc+5);
+    console.log(sc);
+  break;
+  case 11:                 // 12번 
+    if(Num==11 && id== 3)
+    scch(sc+5);
+  break;
+  case 12:                 // 13번 
+    if(Num==12 && id== 4)
+    scch(sc+5);
+  break;
+  case 13:                 // 14번 
+    if(Num==13 && id== 4)
+    scch(sc+5);
+  break;
+  case 14:                 // 15번 
+    if(Num==14 && id== 2)
+    scch(sc+5);
+  break;
+  case 15:                 // 16번 
+    if(Num==15 && id== 2)
+    scch(sc+5);
+  break;
+  case 16:                 // 17번 
+    if(Num==16 && id== 1)
+    scch(sc+5);
+  break;
+  case 17:                 // 18번 
+    if(Num==17 && id== 2)
+    scch(sc+5);
+  break;
+  case 18:                 // 19번 
+    if(Num==18 && id== 4)
+    scch(sc+5);
+  break;
+  case 19:                 // 20번 
+    if(Num==19 && id== 4)
+    scch(sc+5);
+  break;
+    
+    if(sc>=60) {
+      
+    }
 
-    "Vodka",
-    "Body : the weight or fullness of wine on palate.",
-    "Vermouth",
-  ];
+    else{
 
-  var ans4 = [
-    "포르투갈 - 도세(Doce)",
-    "베르무트(Vermouth)",
-    "Benedictine",
-    "진(Gin)에 야생자두(Sloe Berry)의 성분을 첨가한 것이다.",
-    "원료의 40% 이상 옥수수를 사용한 것",
-    "Aquavit",
-    "Spirits",
-    "기호음료",
-    "럼의 향, 맛에 따라 라이트 럼, 미디엄 럼, 헤비 럼으로 분류된다.",
-    "콜라",
-
-    "계란, 우유, 크림, 당분이 많은 리큐르 등으로 칵테일을 만들 때 많이 사용된다.",
-    "Pub Bar",
-    "Daiquiri",
-    "Gimlet",
-    "Black Russian",
-    "코르크로 밀봉되어 있는 와인을 서비스하는 경우에 적용되며, 스크류캡을 사용한 와인은 부과되지 않는다.",
-    "식기는 같은 종류별로 보관하며 너무 많이 쌓아두지 않는다.",
-
-    "Gin",
-    "Dry : a tasting term to denote the absence of sweetness in wine.",
-    "Dry Sherry",
-  ];
-  var [Num, Numch] = useState(0);
-
-  var [sc, scch] = useState(0);
-  function add1(e) {
-    Numch(Num + 1);
-
-    var id = e.target.value;
-    switch (Num) {
-      case 0: // 1번 문제
-        if (Num == 0 && id == 4) scch(sc + 5);
-        console.log(sc);
-        break;
-      case 1: // 2번
-        if (Num == 1 && id == 1) scch(sc + 5);
-        break;
-      case 2: // 3번
-        if (Num == 2 && id == 4) scch(sc + 5);
-        break;
-      case 3: // 4번
-        if (Num == 3 && id == 4) scch(sc + 5);
-        break;
-      case 4: // 5번
-        if (Num == 4 && id == 3) scch(sc + 5);
-        break;
-      case 5: // 6번
-        if (Num == 5 && id == 3) scch(sc + 5);
-        break;
-      case 6: // 7번
-        if (Num == 6 && id == 3) scch(sc + 5);
-        break;
-      case 7: // 8번
-        if (Num == 7 && id == 3) scch(sc + 5);
-        break;
-      case 8: // 9번
-        if (Num == 8 && id == 3) scch(sc + 5);
-        break;
-      case 9: // 10번
-        if (Num == 9 && id == 2) scch(sc + 5);
-        break;
-      case 10: // 11번 문제
-        if (Num == 10 && id == 2) scch(sc + 5);
-        console.log(sc);
-        break;
-      case 11: // 12번
-        if (Num == 11 && id == 3) scch(sc + 5);
-        break;
-      case 12: // 13번
-        if (Num == 12 && id == 1) scch(sc + 5);
-        break;
-      case 13: // 14번
-        if (Num == 13 && id == 4) scch(sc + 5);
-        break;
-      case 14: // 15번
-        if (Num == 14 && id == 4) scch(sc + 5);
-        break;
-      case 15: // 16번
-        if (Num == 15 && id == 4) scch(sc + 5);
-        break;
-      case 16: // 17번
-        if (Num == 16 && id == 2) scch(sc + 5);
-        break;
-      case 17: // 18번
-        if (Num == 17 && id == 1) scch(sc + 5);
-        break;
-      case 18: // 19번
-        if (Num == 18 && id == 1) scch(sc + 5);
-        break;
-      case 19: // 20번
-        if (Num == 19 && id == 1) scch(sc + 5);
-        break;
+      
     }
   }
+}
 
   return (
     <div>
