@@ -108,13 +108,13 @@ export default function Main(){
 
         <div className="Cocktail_Menu_bar">
             <div onMouseOver={()=>setIsImg1("1")} onMouseOut={()=>setIsImg1("0")} onClick={ClickMenu1} >
-                {isImg_click1 ==="1" ? <img id="menu_items2" src="./Main_cocktail/main_img/menu_item1_click.png" alt="item1"></img> :
+                {isImg_click1 ==="1" ? <img id="Cocktail_menu_items2" src="./Main_cocktail/main_img/menu_item1_click.png" alt="item1"></img> :
                 (isImg1 ==="0" ?
                 <img id="Cocktail_menu_items2" src="./Main_cocktail/main_img/menu_item1.png" alt="item1"></img> :
                 <img id="Cocktail_menu_items2" src="./Main_cocktail/main_img/menu_item_mouse_hover1.png" alt="item1"></img>)}
             </div>
             <div onMouseOver={()=>setIsImg2("1")} onMouseOut={()=>setIsImg2("0")} onClick={ClickMenu2}>
-            {isImg_click2 ==="1" ? <img id="menu_items" src="./Main_cocktail/main_img/menu_item2_click.png" alt="item2"></img> :
+            {isImg_click2 ==="1" ? <img id="Cocktail_menu_items" src="./Main_cocktail/main_img/menu_item2_click.png" alt="item2"></img> :
                 (isImg2 ==="0" ?
                 <img id="Cocktail_menu_items" src="./Main_cocktail/main_img/menu_item2.png" alt="item2"></img> :
                 <img id="Cocktail_menu_items" src="./Main_cocktail/main_img/menu_item_mouse_hover2.png" alt="item2"></img>)}
