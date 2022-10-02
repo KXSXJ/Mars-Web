@@ -9,16 +9,16 @@ export default function Bottom_Information(){
 
     return(
         
-        <div><img id="Bottom_Line" src="./Main_cocktail/bottom_img/Bottom_Line.png"></img>
+        <div><img id="Bottom_Line" src="./bottom_img/Bottom_Line.png"></img>
         <div className="Bottom_content_container">
             
             <div className="Bottom_side_left">
-                <img id="bottom_logo"src="./Main_cocktail/bottom_img/bottom_logo.png"></img>
+                <img id="bottom_logo"src="./bottom_img/bottom_logo.png"></img>
             
             <div className="SNS_container">
-                <img id="icon_items"src="./Main_cocktail/bottom_img/facebook_icon.png"></img>
-                <img id="icon_items"src="./Main_cocktail/bottom_img/twiter_icon.png"></img>
-                <img id="icon_items"src="./Main_cocktail/bottom_img/instagram_icon.png"></img>
+                <img id="icon_items"src="./bottom_img/facebook_icon.png"></img>
+                <img id="icon_items"src="./bottom_img/twiter_icon.png"></img>
+                <img id="icon_items"src="./bottom_img/instagram_icon.png"></img>
             </div>
             </div>
 
