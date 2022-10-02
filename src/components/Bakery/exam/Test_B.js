@@ -254,7 +254,7 @@ function add1(e){
 
   return (
     <div>
-      <div id="exam_top_txt">테스트 모드 문제 A</div>
+      <div id="exam_top_txt">테스트 모드 문제 B</div>
     {Num <= 19 ? 
       <div className="Exan_Test_container">
       <header className="Exam_header">
@@ -273,7 +273,7 @@ function add1(e){
       <div id="Commentary">해설 : {explain[Num]}</div>
       </header>
     </div>
-    : null}
+    : <div id="end_score"> 모든 문제를 푸셨습니다. 총점 : {sc}점</div>}
     </div>
   );
 }

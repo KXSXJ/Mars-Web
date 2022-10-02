@@ -250,7 +250,7 @@ function add1(e){
       <div id="Commentary">해설 : {explain[Num]}</div>
       </header>
     </div>
-    : null}
+    : <div id="end_score"> 모든 문제를 푸셨습니다. 총점 : {sc}점</div>}
     </div>
   );
 }
