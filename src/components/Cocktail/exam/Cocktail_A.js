@@ -1,7 +1,10 @@
 import "./Cocktail_Test.scss";
 import { useState } from "react";
+import TestResult from "./Test_Result";
 
 export default function CocktailA({name}) {
+
+
   let quest = [
     "1. 레드와인용 포도 품종이 아닌것은?",
     "2. 과일이나 곡류를 발효시켜 증류한 스프릿츠(Spirits)에 감미와 천연 추출물 등을 첨가한 것은?",
@@ -192,6 +195,8 @@ export default function CocktailA({name}) {
    function toggleTestPage(){
     setResult_save(true);
    }
+
+
   return (
     <div>
       <div id="exam_top_txt">모의시험 테스트 문제 A</div>
@@ -213,21 +218,7 @@ export default function CocktailA({name}) {
       
     </div>
     
-  : <div className="Test_Result_Container">
-  <div className="Result_content_container">
-      <div className="Result_top_text">모의테스트 결과</div>
-      <div id="result_top_text1">조주 기능사</div>
-      <img id="result_top_line"src="./Main_cocktail/Test_Result/top_line.png" alt="top_line"/>
-      <img id="result_video_picture" src="./Main_cocktail/Test_Result/result_video_picture.png" alt="result_video_picture"/>      
-      {sc>=60 ? 
-      <img id="stamp_img" src="./Main_cocktail/Test_Result/pass_img.png" alt="stamp_img"/>:
-      <img id="stamp_img" src="./Main_cocktail/Test_Result/fail_img.png" alt="stamp_img"/>
-      }
-      <div id="final_score" style={{color: (sc>=60 ? 'blue' : 'red')}}>총점 : {sc}점</div>
-      <div id="result_bottom_text">{name}님의 <a>'조주기능사'</a> 모의시험 테스트는 <span style={{color: (sc>=60 ? 'blue' : 'red')}}>{sc>=60 ? '합격' :'불합격'}</span>입니다</div>    
-      <button id="result_save" onClick={toggleTestPage}>확인</button>
-  </div>
-  </div>
+  : <TestResult name={name} score={sc} mode="cocktail"/>
   }
    </div>
   );
