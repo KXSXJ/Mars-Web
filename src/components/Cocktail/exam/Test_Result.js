@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./Cocktail_Test_Result.scss"
+import "./Test_Result.scss"
 export default function TestResult({name, score, mode}){
     
 
@@ -28,10 +28,8 @@ export default function TestResult({name, score, mode}){
                 <div id="final_score" style={{color: ({score}>=60 ? 'blue' : 'red')}}>총점 : {score}점</div>
                 <div id="result_bottom_text">{name}님의 <a>{mode ==="cocktail" ? "'조주기능사'" : mode==="bakery" ? "'제과 · 제빵기능사'" : null}</a> 모의시험 테스트는 <span style={{color: ({score}>=60 ? 'blue' : 'red')}}>{{score}>=60 ? '합격' :'불합격'}</span>입니다</div> 
             </div>
-            
+        
         </div>
     )
 
-
- 
 }

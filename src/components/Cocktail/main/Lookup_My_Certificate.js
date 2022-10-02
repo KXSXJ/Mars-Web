@@ -25,6 +25,16 @@ export default function LookupCertificate() {
     setBackpage(true);
   }
 
+  var date = new Date();
+  var year = date.getFullYear();
+  var month = date.getMonth() + 1;
+  var day = date.getDate();
+
+  //한 자리수 일 경우 앞에 0을 붙여주는 format
+  var monthformat = ("00" + month.toString()).slice(-2);
+  var dayformat = ("00" + day.toString()).slice(-2);
+
+
 
   return (
     <div>{
@@ -58,7 +68,7 @@ export default function LookupCertificate() {
             />
             <div id="lookup_mid_text">VWS <a>조주기능사</a> 자격증을</div>
             <div id="lookup_mid_text">취득하였음을 증명합니다.</div>
-            <div id="lookup_Date">2022.09.29</div>
+            <div id="lookup_Date">{year}.{monthformat}.{dayformat}</div>
             <button id="lookup_close_btn" onClick={Goto_back}>닫기</button>
           </div>
         </div>
