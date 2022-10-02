@@ -1,7 +1,12 @@
-import "./Cocktail_Test.scss";
+import "./Bakery_Test.scss";
 import { useState } from "react";
+import Exam_TEst_Result from "../../Cocktail/exam/Cocktail_Test_Result"
 
 export default function CocktailA({name}) {
+  const[inputName, setInputName]=useState({name})
+
+
+
   let quest =  [ '1. 파운드케이크를 팬닝할 때 밑면의 껍질 형성을 방지하기위한 팬으로 가장 적합한 것은?',
   '2. 반죽형 케이크에 특성에 해당되는 않는 것은?',
   '3. 반죽형 쿠키의 굽기 과정에서 퍼짐성이 나쁠 때 퍼짐성을 좋게 하기 위해서 사용할 수 있는 방법은?',
@@ -213,15 +218,15 @@ var ans4 =     ['종이팬',
   : <div className="Test_Result_Container">
   <div className="Result_content_container">
       <div className="Result_top_text">모의테스트 결과</div>
-      <div id="result_top_text1">조주 기능사</div>
+      <div id="result_top_text1">제과 · 제빵기능사</div>
       <img id="result_top_line"src="./Main_cocktail/Test_Result/top_line.png" alt="top_line"/>
-      <img id="result_video_picture" src="./Main_cocktail/Test_Result/result_video_picture.png" alt="result_video_picture"/>      
+      <img id="result_video_picture" src="./Main_cocktail/Test_Result/result_video_picture2.png" alt="result_video_picture"/>      
       {sc>=60 ? 
       <img id="stamp_img" src="./Main_cocktail/Test_Result/pass_img.png" alt="stamp_img"/>:
       <img id="stamp_img" src="./Main_cocktail/Test_Result/fail_img.png" alt="stamp_img"/>
       }
       <div id="final_score" style={{color: (sc>=60 ? 'blue' : 'red')}}>총점 : {sc}점</div>
-      <div id="result_bottom_text">{name}님의 <a>'조주기능사'</a> 모의시험 테스트는 <span style={{color: (sc>=60 ? 'blue' : 'red')}}>{sc>=60 ? '합격' :'불합격'}</span>입니다</div>    
+      <div id="result_bottom_text">{name}님의 <a>'제과 · 제빵기능사'</a> 모의시험 테스트는 <span style={{color: (sc>=60 ? 'blue' : 'red')}}>{sc>=60 ? '합격' :'불합격'}</span>입니다</div>    
       <button id="result_save" onClick={toggleTestPage}>확인</button>
   </div>
   </div>

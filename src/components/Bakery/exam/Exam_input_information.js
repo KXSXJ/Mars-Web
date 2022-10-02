@@ -1,9 +1,9 @@
 import "./Exam_input_information.scss";
 import PropTypes from "prop-types";
 import React, { useState } from "react";
-import CocktailA from "./Cocktail_A";
-import CocktailB from "./Cocktail_B";
-import CocktailC from "./Cocktail_C";
+import BakeryA from "./Bakery_A";
+import BakeryB from "./Bakery_B";
+import BakeryC from "./Bakery_C";
 
 
 function Exam_inforamtion({ exam_type }) {
@@ -69,11 +69,11 @@ function Exam_inforamtion({ exam_type }) {
           <button id="exam_input_next_btn" onClick={toggleNextButton}>확인</button>
         </div>
       ) : exam_type === "A" ? (
-        <CocktailA name={InputName}/>
+        <BakeryA name={InputName}/>
       ) : exam_type === "B" ? (
-        <CocktailB name={InputName} />
+        <BakeryB name={InputName} />
       ) : exam_type === "C" ? (
-        <CocktailC name={InputName} />
+        <BakeryC name={InputName} />
       ) : null}
     </div>
   );

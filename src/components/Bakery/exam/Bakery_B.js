@@ -1,5 +1,7 @@
-import "./Cocktail_Test.scss";
+import "./Bakery_Test.scss";
 import { useState } from "react";
+import Exam_TEst_Result from "../../Cocktail/exam/Cocktail_Test_Result"
+
 
 export default function CocktailB({name}) {
   let quest = [
@@ -197,7 +199,7 @@ export default function CocktailB({name}) {
   return (
     <div>
 
-  <div id="exam_top_txt">모의시험 테스트 문제 B</div>
+    <div id="exam_top_txt">모의시험 테스트 문제 B</div>
     {Num <= 19 ? 
     
       <div className="Exan_Test_container">
@@ -220,9 +222,9 @@ export default function CocktailB({name}) {
   : <div className="Test_Result_Container">
   <div className="Result_content_container">
       <div className="Result_top_text">모의테스트 결과</div>
-      <div id="result_top_text1">조주 기능사</div>
+      <div id="result_top_text1">제과 · 제빵기능사</div>
       <img id="result_top_line"src="./Main_cocktail/Test_Result/top_line.png" alt="top_line"/>
-      <img id="result_video_picture" src="./Main_cocktail/Test_Result/result_video_picture.png" alt="result_video_picture"/>      
+      <img id="result_video_picture" src="./Main_cocktail/Test_Result/result_video_picture.png2" alt="result_video_picture"/>      
       {sc>=60 ? 
       <img id="stamp_img" src="./Main_cocktail/Test_Result/pass_img.png" alt="stamp_img"/>:
       <img id="stamp_img" src="./Main_cocktail/Test_Result/fail_img.png" alt="stamp_img"/>

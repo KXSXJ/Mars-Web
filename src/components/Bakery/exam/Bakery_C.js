@@ -1,5 +1,6 @@
-import "./Cocktail_Test.scss"
+import "./Bakery_Test.scss"
 import { useState } from 'react';
+import Exam_TEst_Result from "../../Cocktail/exam/Cocktail_Test_Result"
 
 
 
@@ -247,15 +248,15 @@ function add1(e){
   : <div className="Test_Result_Container">
   <div className="Result_content_container">
       <div className="Result_top_text">모의테스트 결과</div>
-      <div id="result_top_text1">조주 기능사</div>
+      <div id="result_top_text1">제과 · 제빵기능사</div>
       <img id="result_top_line"src="./Main_cocktail/Test_Result/top_line.png" alt="top_line"/>
-      <img id="result_video_picture" src="./Main_cocktail/Test_Result/result_video_picture.png" alt="result_video_picture"/>      
+      <img id="result_video_picture" src="./Main_cocktail/Test_Result/result_video_picture.png2" alt="result_video_picture"/>      
       {sc>=60 ? 
       <img id="stamp_img" src="./Main_cocktail/Test_Result/pass_img.png" alt="stamp_img"/>:
       <img id="stamp_img" src="./Main_cocktail/Test_Result/fail_img.png" alt="stamp_img"/>
       }
       <div id="final_score" style={{color: (sc>=60 ? 'blue' : 'red')}}>총점 : {sc}점</div>
-      <div id="result_bottom_text">{name}님의 <a>'조주기능사'</a> 모의시험 테스트는 <span style={{color: (sc>=60 ? 'blue' : 'red')}}>{sc>=60 ? '합격' :'불합격'}</span>입니다</div>    
+      <div id="result_bottom_text">{name}님의 <a>'제과 · 제빵기능사'</a> 모의시험 테스트는 <span style={{color: (sc>=60 ? 'blue' : 'red')}}>{sc>=60 ? '합격' :'불합격'}</span>입니다</div>    
       <button id="result_save">확인</button>
   </div>
   </div>
