@@ -79,47 +79,61 @@ export default function Main(){
 
     return(
         <div>
-        <div className="Main_Top_Background">
-            <img id="main_top_background_img" src="./Main_cocktail/main_img/main_big_img2.png" alt="Main_background_img" width="100%"></img>
+        <div className="Cocktail_Main_Top_Background">
+            <img id="Cocktail_main_top_background_img" src="./Main_cocktail/main_img/main_big_img2.png" alt="Main_background_img" width="100%"></img>
         </div>
-        <div className="Main_Top_Content">
-            <div className="Main_Top">
-                <img onClick={Go_to_Main} id="Mars_logo" src="./main_logo.png" alt="Mars_icon"></img>
-                <Link to="/Sign_page"><img id="guest_Mode_profile" src="./Main_cocktail/main_img/Guest_Mode.png" alt="Guest_icon"></img></Link>
+        <div className="Cocktail_Main_Top_Content">
+            <div className="Cocktail_Main_Top">
+                <img onClick={Go_to_Main} id="Cocktail_Mars_logo" src="./main_logo.png" alt="Mars_icon"></img>
             </div>
-            <div className="Main_Top_Txt">여러분의 창업능력을 지금 확인해보세요</div>
-            <div id="main_test_button_img" onClick={ClickMenu5}><img id="icon2" src="./Main_cocktail/main_img/icon2.png" alt="icon2"></img>
+            <div className="Cocktail_Main_Top_Txt">여러분의 창업능력을 지금 확인해보세요</div>
+            
+            <Link to="/Sign_page">
+            <div className="Cocktail_login_profile_container">
+            <div className="Cocktail_login_profile_content">
+                <div id="Cocktail_login_mode_about">
+                    Guest Mode
+                </div>
+                <div id="Cocktail_login_mode_about2">
+                    로그인
+                </div>
+            </div>
+                <img id="Cocktail_guest_Mode_profile" src="./Main_cocktail/main_img/Guest_Mode.png" />
+            </div>
+            </Link>
+
+            <div id="Cocktail_main_test_button_img" onClick={ClickMenu5}><img id="Cocktail_icon2" src="./Main_cocktail/main_img/icon2.png" alt="icon2"></img>
             <div>창업 모의시험 테스트</div></div>
         </div>
 
-        <div className="Menu_bar">
+        <div className="Cocktail_Menu_bar">
             <div onMouseOver={()=>setIsImg1("1")} onMouseOut={()=>setIsImg1("0")} onClick={ClickMenu1} >
                 {isImg_click1 ==="1" ? <img id="menu_items2" src="./Main_cocktail/main_img/menu_item1_click.png" alt="item1"></img> :
                 (isImg1 ==="0" ?
-                <img id="menu_items2" src="./Main_cocktail/main_img/menu_item1.png" alt="item1"></img> :
-                <img id="menu_items2" src="./Main_cocktail/main_img/menu_item_mouse_hover1.png" alt="item1"></img>)}
+                <img id="Cocktail_menu_items2" src="./Main_cocktail/main_img/menu_item1.png" alt="item1"></img> :
+                <img id="Cocktail_menu_items2" src="./Main_cocktail/main_img/menu_item_mouse_hover1.png" alt="item1"></img>)}
             </div>
             <div onMouseOver={()=>setIsImg2("1")} onMouseOut={()=>setIsImg2("0")} onClick={ClickMenu2}>
             {isImg_click2 ==="1" ? <img id="menu_items" src="./Main_cocktail/main_img/menu_item2_click.png" alt="item2"></img> :
                 (isImg2 ==="0" ?
-                <img id="menu_items" src="./Main_cocktail/main_img/menu_item2.png" alt="item2"></img> :
-                <img id="menu_items" src="./Main_cocktail/main_img/menu_item_mouse_hover2.png" alt="item2"></img>)}
+                <img id="Cocktail_menu_items" src="./Main_cocktail/main_img/menu_item2.png" alt="item2"></img> :
+                <img id="Cocktail_menu_items" src="./Main_cocktail/main_img/menu_item_mouse_hover2.png" alt="item2"></img>)}
             </div>
             <div onMouseOver={()=>setIsImg3("1")} onMouseOut={()=>setIsImg3("0")} onClick={ClickMenu3}>
-            {isImg_click3 ==="1" ?  <img id="menu_items" src="./Main_cocktail/main_img/menu_item3_click.png" alt="item3"></img> :
+            {isImg_click3 ==="1" ?  <img id="Cocktail_menu_items" src="./Main_cocktail/main_img/menu_item3_click.png" alt="item3"></img> :
             (isImg3 ==="0" ?
-            <img id="menu_items" src="./Main_cocktail/main_img/menu_item3.png" alt="item3" ></img> :
-            <img id="menu_items" src="./Main_cocktail/main_img/menu_item_mouse_hover3.png" alt="item3"></img>)}    
+            <img id="Cocktail_menu_items" src="./Main_cocktail/main_img/menu_item3.png" alt="item3" ></img> :
+            <img id="Cocktail_menu_items" src="./Main_cocktail/main_img/menu_item_mouse_hover3.png" alt="item3"></img>)}    
             </div>
  
  
             <div onMouseOver={()=>setIsImg4("1")} onMouseOut={()=>setIsImg4("0")} onClick={ClickMenu4}>
-            {isImg_click4 ==="1" ? <img id="menu_items" src="./Main_cocktail/main_img/menu_item4_click.png" alt="item4"></img> :
+            {isImg_click4 ==="1" ? <img id="Cocktail_menu_items" src="./Main_cocktail/main_img/menu_item4_click.png" alt="item4"></img> :
                 (isImg4 ==="0" ?
-                <img id="menu_items" src="./Main_cocktail/main_img/menu_item4.png" alt="item4"></img> :
-                <img id="menu_items" src="./Main_cocktail/main_img/menu_item_mouse_hover4.png" alt="item4"></img>)}
+                <img id="Cocktail_menu_items" src="./Main_cocktail/main_img/menu_item4.png" alt="item4"></img> :
+                <img id="Cocktail_menu_items" src="./Main_cocktail/main_img/menu_item_mouse_hover4.png" alt="item4"></img>)}
             </div>
-           <div id="home_icon_contain" ><Link to="/"><img id="home_icon" src="./Main_cocktail/main_img/home_icon.png" alt="home_icon"></img></Link></div>
+           <div id="Cocktail_home_icon_contain" ><Link to="/"><img id="Cocktail_home_icon" src="./Main_cocktail/main_img/home_icon.png" alt="home_icon"></img></Link></div>
             
         </div>
 

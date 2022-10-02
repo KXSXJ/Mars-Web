@@ -6,6 +6,7 @@ export default function Choice(){
     
     return(
         <div className="Background_Container">
+            
             <img id="move_img" src="./start_page_img/background_img.gif" alt="bg_img"/>
             <div className="left_contents">
                 <img id="top_img" src="./start_page_img/top_img.png" alt="top_txt"/>
