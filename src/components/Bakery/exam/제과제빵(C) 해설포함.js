@@ -1,11 +1,10 @@
-import "./Bakery_Test.scss"
+
 import { useState } from 'react';
-import TestResult from "../../Cocktail/exam/Test_Result"
+import './App.css';
 
 
-
-export default function CocktailC({name}) {
-  let quest =  [ '1. 불란서 빵의 2차 발효실 습도로 가장 적합한 것은?',
+function App() {
+   let quest =  [ '1. 불란서 빵의 2차 발효실 습도로 가장 적합한 것은?',
                   '2. 일반적으로 이스트 도넛의 가장 적당한 튀김온도는?',
                   '3. 다음 중 팬닝에 대한 설명으로 틀린 것은?',
                   '4. 액체발효법(액종법)에 대한 설명으로 옳은 것은?',
@@ -27,7 +26,28 @@ export default function CocktailC({name}) {
                   '20. 유당에 대한 설명으로 틀린 것은?'
               
 ];
-  
+  let explain = ['불란서빵의 2차 발효실 습도는 75~80%이다.',
+                 '도넛의 가장 적당한 튀김온도는 180~195℃이다.',
+                 '철판의 팬닝 온도는 35~40℃ 정도이다.',
+                 '액체발효법: 액종발효법이라고 하며 공간이나 설비가 감소하고 균일한 제품을 생산하며 발효 손실이 감소됩니다.',
+                 '쇼트닝은 발효에 영향을 별로 받지 않는다.',
+                 '성형의 범위: 분할, 둥글리기, 정형공정이다.',
+                 '스펀지 도우법의 스펀지 반죽온도는 24℃이다.',
+                 '반죽의 성질을 조사하는 데 이용되는 기기는 배리노래프, 아밀로그래프, 익스텐소그래프가 가장 널리 쓰인다.',
+                 '제품의 총무게: 50g X 100개 = 5.0kg 따라서 굽기전 반죽 무게 5.0kg / (1-0.12) = 5.68kg',
+                 '믹싱의 목적: 원료의 균일한 분산, 반죽의 글루텐 형성, 반죽에 고익 혼입, 수화를 촉진',
+                 '생산 원가요소: 재료비, 노무비, 경비이다.',
+                 '빵의 제품평가에서 브레이크와 슈레드 부족현상은 냉장고에서 보관과는 관계가 없다.',
+                 '빵의 노화를 지연시키는 경우 : 저장온도를 -18℃ 이하로 유지, 21~35℃에서 보관, 고율배합, 토코페롤을 첨가',
+                 '계획생산이 가능, 인당 샌상량이 증가, 반죽의 저장성 향상, 작업현장에서 시간이 절약',
+                 '식빵의 포장에 가장 적합한 온도는 35~40℃이다.',
+                 '팽창제: 가스를 발생시키는 물질이다, 반죽을 부풀게 한다, 제품에 부드러운 조직을 부여해 준다.',
+                 '모노-니-글리세리드: 식품, 화장품의 에멀션화제로 사용된다.',
+                 '글루텐 : 밀, 보리 등에 들어있는 단백질의 혼합물, 글루테닌, 글리아딘',
+                 '아밀로그래프: 점도상승의 모양을 그래프로 자동기록하는 장치',
+                 '유당: 글루코오스 1몰과 갈락토오스 1몰로 이루어지는 이당류이다.'
+
+                    ];
   var ans1 =     ['65~70%',
                   '100~115℃',
                   '반죽의 이음매가 틀의 바닥으로 놓이게 한다.',
@@ -211,33 +231,24 @@ function add1(e){
 }
 
 
-
-
   return (
-    <div>
-     <div id="exam_top_txt">모의시험 테스트 문제 C</div>
-    {Num <= 19 ? 
-    
-      <div className="Exan_Test_container">
-      <header className="Exam_header">
-        <div id="Exam_header_text"> {quest[Num]}</div>
+    <div className="App">
+      <header className="App-header">
 
-        <p id="Exam_btn_items"><button onClick={add1} value={1} >1</button> {ans1[Num]}</p>
+      <h2> {quest[Num]}</h2> {sc}
+
+       <p><button onClick={add1} value={1} >1</button> {ans1[Num]}</p>
        
-       <p id="Exam_btn_items"><button onClick={add1} value={2}>2 </button> {ans2[Num]}</p>
+       <p><button onClick={add1} value={2}>2 </button> {ans2[Num]}</p>
        
-       <p id="Exam_btn_items"><button onClick={add1} value={3}>3 </button> {ans3[Num]}</p>
+       <p><button onClick={add1} value={3}>3 </button> {ans3[Num]}</p>
       
-       <p id="Exam_btn_items"><button onClick={add1} value={4}>4 </button> {ans4[Num]}</p>
+       <p><button onClick={add1} value={4}>4 </button> {ans4[Num]}</p>
 
+      <h4> {explain[Num]}</h4>
       </header>
-
-      
     </div>
-    
-  : <TestResult name={name} score={sc} mode="bakery"/>
-  }
-   </div>
   );
 }
 
+export default App;

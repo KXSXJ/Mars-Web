@@ -80,18 +80,17 @@ export default function Main(){
     return(
         <div>
         <div className="Main_Top_Background2">
-            <img id="main_top_background_img" src="./Main_Bakery/main_img/main_big_img2.png" alt="Main_background_img" width="100%"></img>
+            <img id="main_top_background_img" src="./Main_Bakery/main_img/main_big_img.png" alt="Main_background_img" width="100%"></img>
         </div>
         <div className="Main_Top_Content">
             <div className="Main_Top">
                 <img onClick={Go_to_Main} id="Mars_logo" src="./main_logo.png" alt="Mars_icon"></img>
-                <Link to="/Sign_page"><img id="guest_Mode_profile" src="./Main_cocktail/main_img/Guest_Mode.png" alt="Guest_icon"></img></Link>
+                <Link to="/Sign_page"><img id="guest_Mode_profile" src="./Main_bakery/main_img/Guest_Mode.png" alt="Guest_icon"></img></Link>
             </div>
             <div className="Main_Top_Txt">여러분의 창업능력을 지금 확인해보세요</div>
             <div id="main_test_button_img" onClick={ClickMenu5}><img id="icon2" src="./Main_cocktail/main_img/icon2.png" alt="icon2"></img>
             <div>창업 모의시험 테스트</div></div>
         </div>
-
         <div className="Menu_bar">
             <div onMouseOver={()=>setIsImg1("1")} onMouseOut={()=>setIsImg1("0")} onClick={ClickMenu1} >
                 {isImg_click1 ==="1" ? <img id="menu_items2" src="./Main_cocktail/main_img/menu_item1_click.png" alt="item1"></img> :

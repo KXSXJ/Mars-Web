@@ -1,11 +1,10 @@
-import "./Bakery_Test.scss"
+
 import { useState } from 'react';
-import TestResult from "../../Cocktail/exam/Test_Result"
+import './App.css';
 
 
-
-export default function CocktailC({name}) {
-  let quest =  [ '1. 불란서 빵의 2차 발효실 습도로 가장 적합한 것은?',
+function App() {
+   let quest =  [ '1. 불란서 빵의 2차 발효실 습도로 가장 적합한 것은?',
                   '2. 일반적으로 이스트 도넛의 가장 적당한 튀김온도는?',
                   '3. 다음 중 팬닝에 대한 설명으로 틀린 것은?',
                   '4. 액체발효법(액종법)에 대한 설명으로 옳은 것은?',
@@ -211,33 +210,24 @@ function add1(e){
 }
 
 
-
-
   return (
-    <div>
-     <div id="exam_top_txt">모의시험 테스트 문제 C</div>
-    {Num <= 19 ? 
-    
-      <div className="Exan_Test_container">
-      <header className="Exam_header">
-        <div id="Exam_header_text"> {quest[Num]}</div>
+    <div className="App">
+      <header className="App-header">
 
-        <p id="Exam_btn_items"><button onClick={add1} value={1} >1</button> {ans1[Num]}</p>
+      <h2> {quest[Num]}</h2> {sc}
+
+       <p><button onClick={add1} value={1} >1</button> {ans1[Num]}</p>
        
-       <p id="Exam_btn_items"><button onClick={add1} value={2}>2 </button> {ans2[Num]}</p>
+       <p><button onClick={add1} value={2}>2 </button> {ans2[Num]}</p>
        
-       <p id="Exam_btn_items"><button onClick={add1} value={3}>3 </button> {ans3[Num]}</p>
+       <p><button onClick={add1} value={3}>3 </button> {ans3[Num]}</p>
       
-       <p id="Exam_btn_items"><button onClick={add1} value={4}>4 </button> {ans4[Num]}</p>
+       <p><button onClick={add1} value={4}>4 </button> {ans4[Num]}</p>
 
+  
       </header>
-
-      
     </div>
-    
-  : <TestResult name={name} score={sc} mode="bakery"/>
-  }
-   </div>
   );
 }
 
+export default App;

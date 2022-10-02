@@ -45,7 +45,7 @@ export default function CocktailA({name}) {
     "Collins Glass - Pineapple Slice",
     "서비스의 중점을 정중함과 편안함에 둔다.",
     "뉴욕(New York)",
-    "We look forwadr to seeing you on May 5th.",
+    "We look forward to seeing you on May 5th.",
     "Are you in a hurry?",
     "통화 중이므로 바꿔 드릴 수 없습니다.",
   ];
