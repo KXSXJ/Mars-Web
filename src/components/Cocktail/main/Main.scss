@@ -39,6 +39,15 @@ body{
     text-align: right;
 }
 
+#coctail_current_states{
+    font-size: 1.4vw;
+    background-color:transparent ;
+    font-weight: 550;
+    color: #fafafa;
+    border: none;
+    margin-right: -0.8vw;
+}
+
 .Cocktail_login_profile_content:hover #Cocktail_login_mode_about2{
     color: #6f689c;
 }
