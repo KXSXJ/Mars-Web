@@ -1,6 +1,6 @@
 body{
     width: 100vw;
-    height: 100vw;
+    height: 100vh;
 }
 
 #sign_background_img{
@@ -41,11 +41,11 @@ body{
 .Sign_up_content_container{
     background-color: white;
     width: 60vw;
-    height: 75vw;
+    height: 60vw;
     position: absolute;
     margin-left: 20vw;
     margin-top: -85vw;
-    border-radius: 2vw;
+    border-radius: 20px 20px 20px 20px;
     opacity: 0;
     animation: opacity_effect 1.2s ease 0.2s forwards;
 }
@@ -74,12 +74,12 @@ body{
 }
 
 
-#sign_up_idpw{
+#sign_up_text_input_content input{
     width: 42vw;
     height: 3.3vw;
     border-radius: 1vw;
     font-size: 1.2vw;
-    border:  solid;
+    border: 1.8px solid;
     border-color:rgb(190, 190, 190) ;
     padding-left: 1vw;
 }
@@ -218,7 +218,7 @@ body{
     background-color: #FFFFFF;
     color: #9790b8;
     font-weight: 550;
-    border: 0.1042vw  solid #9790b8;
+    border: 1.5px  solid #9790b8;
 }
 
 #sign_up_text_margin{

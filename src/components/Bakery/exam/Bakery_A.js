@@ -21,7 +21,7 @@ export default function CocktailA({name}) {
                   '15. 빵 제품의 모서리가 예리하게 된 것은 다음 중 어떤 반죽에서 오는 결과인가?',
                   '16. 지나친 반죽(과발효)가 제품에 미치는 영향을 잘못 설명한 것은?',
                   '17. 식빵의 가장 일반적인 포장 적온은?',
-                  '18. 제빵용 밀가루의 적정 손상 전분의 함량',
+                  '18. 제빵용 밀가루의 적정 손상 전분의 함량은?',
                   '19. 빵을 오븐에 넣으면 빵 속의 온도가 높아지면서 부피가 증가한다. 이떄 일어나는 현상이 아닌 것은?',
                   '20. 발효의 목적이 아닌 것은?'
               
@@ -65,7 +65,7 @@ var ans2 =     ['이중팬',
                   '과다하게 이형유를 사용한 반죽',
                   '향이 강하다.',
                   '25℃',
-                  '1.5~3%',
+                  '4.5~8%',
                   '이산화탄소 가스의 용해도 증가한다.',
                   '글루텐을 강화시킨다.'
 ];
@@ -122,85 +122,85 @@ function add1(e){
   var id = (e.target.value);
   switch(Num){
     case 0:                 // 1번 문제
-      if(Num==0 && id== 2)
+      if(Num===0 && id=== 2)
       scch(sc+5);
       console.log(sc);
     break;
     case 1:                 // 2번 
-      if(Num==1 && id== 4)
+      if(Num===1 && id=== 4)
       scch(sc+5);
     break;
     case 2:                 // 3번 
-      if(Num==2 && id== 1)
+      if(Num===2 && id=== 1)
       scch(sc+5);
     break;
     case 3:                 // 4번 
-      if(Num==3 && id== 2)
+      if(Num===3 && id=== 2)
       scch(sc+5);
     break;
     case 4:                 // 5번 
-      if(Num==4 && id== 3)
+      if(Num===4 && id=== 3)
       scch(sc+5);
     break;
     case 5:                 // 6번 
-      if(Num==5 && id== 3)
+      if(Num===5 && id=== 3)
       scch(sc+5);
     break;
     case 6:                 // 7번 
-      if(Num==6 && id== 4)
+      if(Num===6 && id=== 4)
       scch(sc+5);
     break;
     case 7:                 // 8번 
-      if(Num==7 && id== 3)
+      if(Num===7 && id=== 3)
       scch(sc+5);
     break;
     case 8:                 // 9번 
-      if(Num==8 && id== 2)
+      if(Num===8 && id=== 2)
       scch(sc+5);
     break;
     case 9:                 // 10번 
-      if(Num==9 && id== 3)
+      if(Num===9 && id=== 3)
       scch(sc+5);
     break;
     case 10:                 // 11번 문제
-    if(Num==10 && id== 1)
+    if(Num===10 && id=== 1)
     scch(sc+5);
     console.log(sc);
   break;
   case 11:                 // 12번 
-    if(Num==11 && id== 4)
+    if(Num===11 && id=== 4)
     scch(sc+5);
   break;
   case 12:                 // 13번 
-    if(Num==12 && id== 2)
+    if(Num===12 && id=== 2)
     scch(sc+5);
   break;
   case 13:                 // 14번 
-    if(Num==13 && id== 2)
+    if(Num===13 && id=== 2)
     scch(sc+5);
   break;
   case 14:                 // 15번 
-    if(Num==14 && id== 3)
+    if(Num===14 && id=== 3)
     scch(sc+5);
   break;
   case 15:                 // 16번 
-    if(Num==15 && id== 4)
+    if(Num===15 && id=== 4)
     scch(sc+5);
   break;
   case 16:                 // 17번 
-    if(Num==16 && id== 3)
+    if(Num===16 && id=== 3)
     scch(sc+5);
   break;
   case 17:                 // 18번 
-    if(Num==17 && id== 2)
+    if(Num===17 && id=== 2)
     scch(sc+5);
   break;
   case 18:                 // 19번 
-    if(Num==18 && id== 2)
+    if(Num===18 && id=== 2)
     scch(sc+5);
   break;
   case 19:                 // 20번 
-    if(Num==19 && id== 2)
+    if(Num===19 && id=== 2)
     scch(sc+5);
   break;
     
