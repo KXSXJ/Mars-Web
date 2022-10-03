@@ -192,9 +192,6 @@ export default function CocktailA({name}) {
 
    const[Result_save, setResult_save] =useState(false);
 
-   function toggleTestPage(){
-    setResult_save(true);
-   }
 
 
   return (
@@ -212,13 +209,13 @@ export default function CocktailA({name}) {
        <p id="Exam_btn_items"><button onClick={add1} value={3}>3 </button> {ans3[Num]}</p>
       
        <p id="Exam_btn_items"><button onClick={add1} value={4}>4 </button> {ans4[Num]}</p>
-
+  
       </header>
 
       
     </div>
     
-  : <TestResult name={name} score={sc} mode="cocktail"/>
+  : <TestResult name={name} score={sc} mode="cocktail"/> 
   }
    </div>
   );
