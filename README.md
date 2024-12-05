@@ -1,70 +1,41 @@
-# Getting Started with Create React App
+## VWS(Vertical Working Simulator)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### 프로젝트 소개
+VR 콘텐츠를 통해 자격증 취득에 필요한 실기 및 필기 시험을 연습할 수 있는 서비스입니다.
 
-## Available Scripts
+개발 기간 : 2024/01 ~ 2024/09
 
-In the project directory, you can run:
+팀 구성 : Front-end 2, Back-end 2, Unity 2
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 사용 기술 & 라이브러리 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+#### _front-end_ 
+JavaScript, React, StyledComponent, keyframes, formik & yup schema
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 구현 기능
++  Formik, yup Schema를 사용한 데이터 검
++  router를 통한 페이지 전환 구현
++  props를 활용한 사용자정보 전달
++  Axios, keyframe를 활용한 자격증 및 플레이 기록 조회, 애니메이션을 통한 동적인 UI 제공
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 담당한 부분
++  모의 테스트 페이지 제작
++  모의시험 테스트 페이지 제작
++  취득한 자격증 페이지 제작
++  베이커리 및 조주기능사 페이지 제작
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 🎯 결과 및 성과
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Axios를 활용한 비동기 통신 처리 방법을 익혔습니다.
+- useState를 통해 상태 관리를 이해하고 활용할 수 있게 되었습니다.
+- React의 props 시스템을 활용해 컴포넌트 간 데이터를 효과적으로 전달할 수 있었습니다.
+- Formik과 yup을 사용하여 입력 데이터의 검증을 자동화 할 수 있게 됐습니다.
